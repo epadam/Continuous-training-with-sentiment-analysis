@@ -1,7 +1,19 @@
 # Continuous-training-with-sentiment-analysis
-sentiment analysis with kubeflow, DVC, mlrun
+entiment analysis with kubeflow, DVC, mlrun
 
-Deploy a kubeflow pipeline for continuous training of senitment analysis
+## Infrastructure Setup
 
+Please follow the instruction here. (credential setup)
 
-Data annotation --> trigger kubeflow pipeline retraining --> deploy on seldon core
+## Model/code Development and Deployment
+
+1. EDA and develop the experiment with different models (mlflow, microsoft reponsible widget, LIT)
+2. Build the components and pipeline (preprocessing, training, deploying, retraining) kubeflow pipeline, tfx, seldon core(A/B testing, canary deployment)
+3. Write CI/CD (github actions, Jenkins)
+
+## Retraining 
+
+a. Annotate your data using Label Studio and store in the node
+b. Detect concept drift
+
+--> It would trigger the retraining process and deploy the seldon core again
