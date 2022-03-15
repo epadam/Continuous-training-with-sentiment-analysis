@@ -6,9 +6,12 @@
 3. Develop Environmnet: Kubeflow
 4. Retraining Pipeline: Kubeflow Pipeline
 5. Deployment: Seldon Core (online and offline)
-6. Monitoring: Promethius
+6. Monitoring: Promethius (explainer, drift, outlier detector)
 7. Logging: ELK
 8. Test UI for Online Inference: Streamlit(auto reply for review commands)
+
+Collected data will be periodically process data, train the model then deploy the model.
+When detect the concept drift, it would trigger the retraining pipeline
 
 ## Infrastructure Setup
 
@@ -22,9 +25,3 @@ You can follow these steps to develop your models
 2. Build the components and pipeline (preprocessing, training, deploying, retraining) kubeflow pipeline, tfx, seldon core(A/B testing, canary deployment)
 3. Write CI/CD (github actions, Jenkins)
 
-## Retraining 
-
-a. Annotate your data using Label Studio and store in the node
-b. Detect concept drift
-
---> It would trigger the retraining process and deploy the seldon core again
