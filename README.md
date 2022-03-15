@@ -1,6 +1,6 @@
 # Continuous-training-with-sentiment-analysis
 
-0. Data Collecting: Streamlit(Product review), SQL
+0. Data Collecting & ETL: Streamlit(Product review), SQL, Airflow
 1. Data labeling: label studio
 2. Model and data tracking: mlflow, DVC
 3. Develop Environmnet: Kubeflow
@@ -8,6 +8,7 @@
 5. Deployment: Seldon Core (online and offline)
 6. Monitoring: Promethius
 7. Logging: ELK
+8. Test UI for Online Inference: Streamlit(auto reply for review commands)
 
 ## Infrastructure Setup
 
