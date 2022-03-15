@@ -1,11 +1,21 @@
 # Continuous-training-with-sentiment-analysis
-entiment analysis with kubeflow, DVC, mlrun
+
+0. Data Collecting: Streamlit, SQL
+1. Data labeling: label studio
+2. Model and data tracking: mlflow, DVC
+3. Develop Environmnet: Kubeflow
+4. Retraining Pipeline: Kubeflow Pipeline
+5. Deployment: Seldon Core (online and offline)
+6. Monitoring: Promethius
+7. Logging: ELK
 
 ## Infrastructure Setup
 
 Please follow the instruction here. (credential setup)
 
-## Model/code Development and Deployment
+## Model Development and Deployment Process
+
+You can follow these steps to develop your models
 
 1. EDA and develop the experiment with different models (mlflow, microsoft reponsible widget, LIT)
 2. Build the components and pipeline (preprocessing, training, deploying, retraining) kubeflow pipeline, tfx, seldon core(A/B testing, canary deployment)
