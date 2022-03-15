@@ -1,6 +1,6 @@
 # Continuous-training-with-sentiment-analysis
 
-0. Data Collecting: Streamlit, SQL
+0. Data Collecting: Streamlit(Product review), SQL
 1. Data labeling: label studio
 2. Model and data tracking: mlflow, DVC
 3. Develop Environmnet: Kubeflow
